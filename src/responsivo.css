@@ -1,0 +1,62 @@
+@media (max-width: 1200px) {
+.card{
+    height: 60vh;
+}
+}
+
+@media (max-width: 425px) {
+    .card{ 
+        
+        width: 90vw;  
+        height: 92%; 
+        border-radius: 2%; 
+        
+        position: absolute;
+        top: 5%;
+        left: 10%;       
+        padding: 4px;
+        margin-bottom: 10px;
+    }
+
+    .texto, .support,.enquiry,.email--address,.name, .last{
+        width: 85vw;            
+    }  
+
+    .row{
+        display: grid;        
+        padding: 2px;                    
+    }   
+
+    .radio{
+        display: grid;
+        justify-content: space-between;            
+    }
+
+    .texto{
+        resize: none;
+        height: 18vh;
+        margin-left: 1vh;
+        
+    }
+
+    #notification-area {
+        position:fixed;
+        top:2px;
+        right:18%;
+        width:250px;       
+        display:flex;
+        flex-direction:column;
+        justify-content:top;    
+      } 
+
+      .attribution{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0.5%; 
+        font-size: 0.8rem; 
+        display: flex;  
+        align-content: center;
+    }   
+
+    
+}

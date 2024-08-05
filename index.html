@@ -11,7 +11,7 @@
     />
 
     <link href="src/style.css" rel="stylesheet" type="text/css" /> 
-    <!-- <link href="src/alertStyle.css" rel="stylesheet" type="text/css" />    -->
+    <link href="src/responsivo.css" rel="stylesheet" type="text/css" />   
     
     <title>Frontend Mentor | Contact form</title>
   </head>
@@ -58,15 +58,15 @@
       <div id="queryType" class="seletor">
         <label class="campo">Query Type</label>
         <div class="radio">
-        <div class="enquiry">
-          <input type="radio" id="general" name="rad" value="General Enquiry" checked/>
-          <label for="general">General Enquiry</label>
-        </div>
+          <div class="enquiry">
+            <input type="radio" id="general" name="rad" value="General Enquiry" checked/>
+            <label for="general">General Enquiry</label>
+          </div>
 
-        <div class="support">
-          <input type="radio" id="request" name="rad" value="Support Request" />
-          <label for="request">Support Request</label>
-        </div>
+          <div class="support">
+            <input type="radio" id="request" name="rad" value="Support Request" />
+            <label for="request">Support Request</label>
+          </div>
        </div> 
       </div>
        <!--       
@@ -85,7 +85,7 @@
       <form>  
         <label for="text">      
           <legend class="campo">Message</legend>
-          <p><textarea id="text" name="" value="ok"></textarea></p>          
+          <p><textarea id="text" class="texto" name="" value="ok"></textarea></p>          
         </label>        
       </form>
       
@@ -98,8 +98,8 @@
       <button type="button" onclick="notify()" class="btn" >Submit</button>
 
       
-       <p id="alerta">Message Sent!</p> 
-       <p id="alerto">Thanks for completing the form. We'll be in touch soon!</p>
+       <!-- <p id="alerta">Message Sent!</p> 
+       <p id="alerto">Thanks for completing the form. We'll be in touch soon!</p> -->
        
 
       <div id="notification-area"> 
@@ -111,9 +111,10 @@
     </div>
 
     <div class="attribution">
+      <div class="footer">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Ailton Costa</a>.
+      Coded by <a href="#">Ailton Costa</a>. </div>
     </div>
 
     <script src="src/script.js"></script>
