@@ -18,7 +18,7 @@ function checkForms(){
     }
 
     if(firstName && lastName && email && text != "" && consentimento == 1 && (escolha == 1 || escolha == 2)){             
-        return alert("deu certo");
+        return notify();
     } else {
         alert("Verifique os dados");
     }

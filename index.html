@@ -10,9 +10,9 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <link href="src/style.css" rel="stylesheet" type="text/css" /> 
-    <link href="src/responsivo.css" rel="stylesheet" type="text/css" />   
-    
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link href="src/responsivo.css" rel="stylesheet" type="text/css" />
+
     <title>Frontend Mentor | Contact form</title>
   </head>
   <body>
@@ -25,12 +25,9 @@
             type="text"
             class="first--name"
             id="firstName"
-            placeholder="This field is required"
-            value="ok"
+            placeholder="This field is required"            
           />
-        
         </div>
-        
 
         <div class="last">
           <label class="campo" for="lastName">Last Name</label>
@@ -39,7 +36,7 @@
             class="last--name"
             id="lastName"
             placeholder="This field is required"
-            value="ok"
+            
           />
         </div>
       </div>
@@ -51,7 +48,7 @@
           class="email--address"
           id="email"
           placeholder="Please enter a valid email address This field is required"
-          value="ailton@dl.com"
+          
         />
       </div>
 
@@ -59,62 +56,55 @@
         <label class="campo">Query Type</label>
         <div class="radio">
           <div class="enquiry">
-            <input type="radio" id="general" name="rad" value="General Enquiry" checked/>
+            <input
+              type="radio"
+              id="general"
+              name="rad"
+              value="General Enquiry"
+              checked
+            />
             <label for="general">General Enquiry</label>
           </div>
 
           <div class="support">
-            <input type="radio" id="request" name="rad" value="Support Request" />
+            <input
+              type="radio"
+              id="request"
+              name="rad"
+              value="Support Request"
+            />
             <label for="request">Support Request</label>
           </div>
-       </div> 
-      </div>
-       <!--       
-          Please select a query type
+        </div>
       </div>
 
-      <div>
-        <label>Message</label>
-        This field is required
-      </div>
-
-      <div>
-        
-      </div> -->      
-
-      <form>  
-        <label for="text">      
+      <form>
+        <label for="text">
           <legend class="campo">Message</legend>
-          <p><textarea id="text" class="texto" name="" value="ok"></textarea></p>          
-        </label>        
+          <p>
+            <textarea id="text" class="texto" ></textarea>
+          </p>
+        </label>
       </form>
-      
-      <div>        
-        <input id="consent" type="CHECKBOX" name="consented" checked/>
-        <label class="campo" for="consent">I consent to being contacted by the team</label> 
-        <!-- To submit this form, please consent to being contacted  -->
+
+      <div>
+        <input id="consent" type="CHECKBOX" name="consented"/>
+        <label class="campo" for="consent">I consent to being contacted by the team</label>
       </div>
 
-      <button type="button" onclick="notify()" class="btn" >Submit</button>
+      <button type="button" onclick="checkForms()" class="btn">Submit</button>
 
-      
-       <!-- <p id="alerta">Message Sent!</p> 
-       <p id="alerto">Thanks for completing the form. We'll be in touch soon!</p> -->
-       
-
-      <div id="notification-area"> 
-        <div id="one">
-
-        </div>       
+      <div id="notification-area">
+        <div id="one"></div>
       </div>
-
     </div>
 
     <div class="attribution">
       <div class="footer">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Ailton Costa</a>. </div>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Ailton Costa</a>.
+      </div>
     </div>
 
     <script src="src/script.js"></script>
